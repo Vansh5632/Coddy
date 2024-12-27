@@ -44,3 +44,4 @@ export default defineSchema({
     .index("by_snippet_id_and_snippet_id",["userId","snippetId"]),
 
 })
+
