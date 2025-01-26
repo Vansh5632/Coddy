@@ -1,7 +1,7 @@
 import Header from  "./_components/Header";
 import Editor from "./_components/EditorPanel";
 import OutputPanel from "./_components/OutputPanel";
-import { SignIn, SignInButton } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 
 export default function Home(){
     return (
