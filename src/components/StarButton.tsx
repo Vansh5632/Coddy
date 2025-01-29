@@ -9,7 +9,7 @@ export const StarButton = ({ snippetId }: { snippetId: Id<"snippets">}) => {
 
     const isStarred = useQuery(api.snippets.isSnippetStarred,{snippetId});
     const starCount = useQuery(api.snippets.getSnippetStarCount,{snippetId});
-    const star = useMutation(api.snippets.starSnippet as any);
+    const star = useMutation(api.snippets.starSnippet);
 
     const handleStar = async()=>{
         if(!isSignedIn) return;
