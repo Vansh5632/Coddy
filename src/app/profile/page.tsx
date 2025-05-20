@@ -66,11 +66,11 @@ function ProfilePage() {
       <div className="max-w-7xl mx-auto px-4 py-12">
         {/* Profile Header */}
 
-        {userStats && userData && (
+        {userStats && userData && 'name' in userData && (
           <ProfileHeader userStats={userStats} userData={userData} user={user!} />
         )}
 
-        {(userStats === undefined || !isLoaded) && <ProfileHeaderSkeleton />}
+        {(userStats === undefined || !isLoaded || !userData || !('name' in userData)) && <ProfileHeaderSkeleton />}
 
         {/* Main content */}
         <div

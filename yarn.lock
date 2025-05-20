@@ -821,12 +821,26 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.3.5.tgz#45f9f87398c5dcea085b715c58ddcf1faf65f716"
   integrity sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==
 
+"@types/react-syntax-highlighter@^15.5.13":
+  version "15.5.13"
+  resolved "https://registry.yarnpkg.com/@types/react-syntax-highlighter/-/react-syntax-highlighter-15.5.13.tgz#c5baf62a3219b3bf28d39cfea55d0a49a263d1f2"
+  integrity sha512-uLGJ87j6Sz8UaBAooU0T6lWJ0dBmjZgN1PZTrj05TNql2/XpC6+4HhMT5syIdFUUt+FASfCeLLv4kBygNU+8qA==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-toastify@^4.1.0":
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/@types/react-toastify/-/react-toastify-4.1.0.tgz#604e712855dd677916d5c66af595d3b590f5d95d"
   integrity sha512-u7Ie/7LHBsPVz/iJxi/WlRDS7Gh9csCJACTDXx+pSLuZCm94xpkwzhM3jV1L5ZxP/in0Gp2tFbJ91VrSGr1gyQ==
   dependencies:
     react-toastify "*"
+
+"@types/react@*":
+  version "19.1.4"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.1.4.tgz#4d125f014d6ac26b4759775698db118701e314fe"
+  integrity sha512-EB1yiiYdvySuIITtD5lhW4yPyJ31RkJkkDw794LaQYrxCSaQV/47y5o1FMC4zF9ZyjUjzJMZwbovEnT5yHTW6g==
+  dependencies:
+    csstype "^3.0.2"
 
 "@types/react@^18":
   version "18.3.18"
