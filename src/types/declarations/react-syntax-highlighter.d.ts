@@ -1,17 +1,31 @@
 declare module 'react-syntax-highlighter' {
-  import { ComponentType, ReactNode } from 'react';
+  import { ComponentType, ReactNode, CSSProperties } from 'react';
+  
+  export interface StyleObject {
+    [key: string]: string | number | StyleObject;
+  }
+  
+  export interface CodeTagProps {
+    style?: CSSProperties;
+    [key: string]: unknown;
+  }
+  
+  export interface LineNumberStyle {
+    color?: string;
+    [key: string]: string | number | undefined;
+  }
   
   export interface SyntaxHighlighterProps {
     language?: string;
-    style?: any;
-    customStyle?: any;
-    codeTagProps?: any;
+    style?: StyleObject;
+    customStyle?: CSSProperties;
+    codeTagProps?: CodeTagProps;
     useInlineStyles?: boolean;
     showLineNumbers?: boolean;
     startingLineNumber?: number;
-    lineNumberStyle?: any;
+    lineNumberStyle?: LineNumberStyle;
     children?: ReactNode;
-    [key: string]: any;
+    [key: string]: unknown;
   }
 
   const SyntaxHighlighter: ComponentType<SyntaxHighlighterProps>;
@@ -21,5 +35,6 @@ declare module 'react-syntax-highlighter' {
 }
 
 declare module 'react-syntax-highlighter/dist/esm/styles/hljs' {
-  export const atomOneDark: any;
+  import { StyleObject } from 'react-syntax-highlighter';
+  export const atomOneDark: StyleObject;
 }
